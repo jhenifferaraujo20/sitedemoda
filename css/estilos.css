@@ -48,13 +48,14 @@ html, body{
 }
 
 .citacao p{
-    margin-top: 10px;
+    margin-top: 0px;
     color: #ffffc7;
     font-size: 22px;
 }
 
 .icone-fechar-citacao{
     margin-left: 120px;
+    width: 40px;
 }
 
 .imagem-pequena{
@@ -65,4 +66,66 @@ html, body{
 
 .imagem-pequena::after{
     content: '\276f';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 120px;
+    left: -90px;
+    font-size: 28px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(-90deg);
+}
+
+.imagem-pequena::before{
+    content: '\276f';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 30px;
+    left: -90px;
+    font-size: 28px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.linha-1{
+    width: 2px;
+    height: 80px;
+    background: black;
+    position: absolute;
+    right: -20px;
+    bottom: 34px;
+}
+
+.linha-1::after{
+    content: '02/04';
+    position: absolute;
+    top: -30px;
+    left: -17px;
+    transform: rotate(-90deg);
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.menu-vertical{
+    position: absolute;
+    bottom: 160px;
+    left: -150px;
+    transform: rotate(-90deg);
+}
+
+.menu-vertical ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 13px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
 }
